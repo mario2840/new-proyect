@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class SueldoSemanal {
+    public static void main(String[] args) {
+        // Crear un objeto Scanner para leer la entrada del usuario
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar las horas trabajadas en la semana
+        System.out.println("Ingrese las horas trabajadas en la semana:");
+        double horas = scanner.nextDouble();
+
+        // Solicitar el pago por hora
+        System.out.println("Ingrese el pago por hora:");
+        double pago = scanner.nextDouble();
+
+        // Calcular el sueldo semanal
+        double sueldo = horas * pago;
+
+        // Mostrar el sueldo semanal
+        System.out.println("El sueldo semanal es: " + sueldo);
+    }
+}
